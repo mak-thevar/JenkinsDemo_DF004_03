@@ -29,5 +29,11 @@ namespace JenkinsDemo_DF004_03.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost(Name = "GetWeatherForecast")]
+        public IActionResult Post()
+        {
+            return Ok(new { success = true, message = "Add record successfully!" });
+        }
     }
 }
